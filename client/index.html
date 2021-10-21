@@ -110,16 +110,16 @@
 		<h2>
 		</h2>
 		<div class="greetings" style="text-align: left;">
-			<button onclick="copy(`owarinet.ender-zone.com`)">Server: IP: owarinet.ender-zone.com </button><br>
-			<button onclick="copy(`25951`)">port: 25951</button><br>
+			<button onclick="copy(`owarinet.ender-zone.com`,'server')">Server: IP: owarinet.ender-zone.com </button><br>
+			<button onclick="copy(`25951`,'port')">port: 25951</button><br>
 			<div id="msg_div">
 				<span id="msg"></span>
 			</div>
 		</div>
 		<script type="text/javascript" charset="utf-8">
-			function copy(text) {
+			function copy(text,id) {
 				navigator.clipboard.writeText(text);
-				document.querySelector('span#msg').innerHTML = "text copied successfully";
+				document.querySelector('span#msg').innerHTML = id+" copied successfully";
 				setTimeout(()=> {
 					document.querySelector('span#msg').innerHTML = "";
 				}, 1000)
