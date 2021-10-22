@@ -1,2 +1,2 @@
 # OWARINET
-servers-web.herokuapp.com
+https://servers-web.herokuapp.com/
