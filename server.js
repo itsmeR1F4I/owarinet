@@ -8,7 +8,6 @@ var app = express();
 const PORT = process.env.PORT || 80;
 
 app.use(morgan('dev'));
-app.use(express.static('client'));
 
 
 // Enable CORS on ExpressJS to avoid cross-origin errors when calling this server using AJAX
@@ -22,9 +21,13 @@ app.use((req, res, next) => {
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
+app.use('/',async(req,res)=>{
+	return res.redirect('http://nekopoi.care');
+});
+
 app.use('/tiktok', tiktok);
 
 
 app.listen(PORT, () => {
-    console.log(`Server Run on port ${PORT}`)
+    console.log(`Server Run on port ${PORT}`);
 });
