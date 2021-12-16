@@ -11,7 +11,7 @@ app.use(morgan('dev'));
 app.use(express.static('client'));
 
 
-// Enable CORS on ExpressJS to avoid cross-origin errors when calling this server using AJAX
+// Enable CORS on ExpressJS to avoid cross-origin errors when calling this server using AJAX//
 // We are authorizing all domains to be able to manage information via AJAX (this is just for development)
 app.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*");
@@ -22,10 +22,10 @@ app.use((req, res, next) => {
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
-app.use('/add',async(req,res)=>{
+app.get('/add',async(req,res)=>{
 	return res.redirect('minecraft://?addExternalServer=Owari%20Network|owarisg.mc-dns.com:25598');
 });
-app.use('/poi',async(req,res)=>{
+app.get('/poi',async(req,res)=>{
 	return res.redirect('https://nekopoi.care/app');
 });
 
