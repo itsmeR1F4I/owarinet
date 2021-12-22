@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 app.get('/add',async(req,res)=>{
-	return res.redirect('minecraft://?addExternalServer=Owari%20NetGG|owarigg.mc-dns.com:38033');
+	return res.redirect('minecraft://?addExternalServer=Owari%20Netuk|owariuk.mc-srv.com:26232');
 });
 app.get('/poi',async(req,res)=>{
 	return res.redirect('https://nekopoi.care/app');
