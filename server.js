@@ -25,6 +25,9 @@ app.use(bodyParser.json());
 app.get('/add',async(req,res)=>{
 	return res.redirect('minecraft://?addExternalServer=Owari%20Network|owari.ddns.net:19104');
 });
+app.get('/addCloveria',async(req,res)=>{
+	return res.redirect('minecraft://?addExternalServer=Cloveria%20S4|sg-4.fahri.dev:2021');
+});
 app.get('/poi',async(req,res)=>{
 	return res.redirect('https://nekopoi.care/app');
 });
