@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 app.get('/add',async(req,res)=>{
-	return res.redirect('minecraft://?addExternalServer=Owari%20Network|owari.ddns.net:25565');
+	return res.redirect('minecraft://?addExternalServer=Owari%20Network|owari.ddns.net:25555');
 });
 app.get('/addCloveria',async(req,res)=>{
 	return res.redirect('minecraft://?addExternalServer=Cloveria%20S4|sg-4.fahri.dev:2021');
