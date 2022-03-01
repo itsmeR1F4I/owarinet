@@ -1,2 +1,2 @@
 # OWARINET
-https://servers-web.herokuapp.com/
+https://owarimc.xyz/
